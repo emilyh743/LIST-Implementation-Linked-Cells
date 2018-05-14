@@ -37,17 +37,6 @@ public class LinkedListImpl implements LIST_Interface {
 			return true;
 		} // insert at index 0
 
-		// else if (index == 0) {
-		// sentinel.getNext().prev = current;
-		// current.next = sentinel;
-		// current.prev = sentinel;
-		// sentinel.next = current;
-		//
-		// size++;
-		// return true;
-		//
-		// } // insert if size is same as index
-
 		else if (size == index) {
 			sentinel.prev.next = current;
 			current.prev = sentinel.prev;
